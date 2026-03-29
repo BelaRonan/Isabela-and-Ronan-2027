@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<!-- saved from url=(0104)file:///C:/Users/ronan.sterry/Downloads/brazil_2027_updated_with_photos2/Brazil%202027%20Updated%202.htm -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brazil 2027</title>
+  <style>
+    :root{
+      --bg:#f6f1ea;
+      --panel:#fffdf9;
+      --header:#2b2b2b;
+      --line:#cdbba8;
+      --accent:#7a5740;
+      --text:#2b2b2b;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    .site{
+      max-width:1200px;
+      margin:24px auto;
+      border:2px solid var(--header);
+      background:var(--panel);
+      min-height:88vh;
+      box-shadow:0 10px 30px rgba(0,0,0,.08);
+    }
+    .top-title{
+      padding:30px 24px 26px;
+      text-align:center;
+      font-size:clamp(2rem, 4vw, 3.25rem);
+      letter-spacing:.04em;
+      border-bottom:2px solid var(--header);
+      font-style:italic;
+    }
+    .tabs{
+      display:grid;
+      grid-template-columns: repeat(5, 1fr);
+      border-bottom:2px solid var(--header);
+    }
+    .tab{
+      border-right:2px solid var(--header);
+      background:#efe5da;
+      padding:16px 10px;
+      text-align:center;
+      cursor:pointer;
+      font-size:1rem;
+      transition:background .2s ease;
+      user-select:none;
+    }
+    .tab:last-child{border-right:none}
+    .tab:hover{background:#e5d7c8}
+    .tab.active{
+      background:#fff;
+      color:var(--accent);
+      font-weight:700;
+    }
+    .content-wrap{
+      display:grid;
+      grid-template-columns: 280px 1fr;
+      min-height:65vh;
+    }
+    .side{
+      border-right:2px solid var(--header);
+      padding:24px 18px;
+      background:#fbf7f1;
+    }
+    .side h2{
+      margin:0 0 10px;
+      font-size:1.1rem;
+      color:var(--accent);
+    }
+    .side p{
+      margin:0 0 14px;
+      line-height:1.5;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size:.96rem;
+    }
+    .main{
+      padding:30px 28px 40px;
+    }
+    .panel{
+      display:none;
+      min-height:100%;
+    }
+    .panel.active{display:block}
+    .editable{
+      outline:none;
+      min-height:80px;
+    }
+    .editable:focus{
+      box-shadow:0 0 0 3px rgba(122,87,64,.18);
+      border-radius:6px;
+      background:#fffdfa;
+    }
+    h1,h2,h3{font-weight:400}
+    .panel h1{
+      margin:0 0 20px;
+      color:var(--accent);
+      font-size:2rem;
+    }
+    .hero-box{
+      border:1px solid var(--line);
+      padding:18px;
+      margin-bottom:24px;
+      background:#fff;
+    }
+    .info-grid{
+      display:grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap:14px;
+      margin-bottom:24px;
+    }
+    .card{
+      border:1px solid var(--line);
+      background:#fff;
+      padding:16px;
+      min-height:120px;
+    }
+    .card h3{
+      margin:0 0 10px;
+      color:var(--accent);
+      font-size:1.1rem;
+    }
+    .section{
+      border-top:1px solid var(--line);
+      padding-top:18px;
+      margin-top:18px;
+    }
+    .section h2{
+      margin:0 0 12px;
+      font-size:1.35rem;
+      color:var(--accent);
+    }
+    .richtext{
+      font-family: Arial, Helvetica, sans-serif;
+      line-height:1.65;
+      font-size:1rem;
+    }
+    .richtext ul{
+      padding-left:20px;
+      margin:8px 0 0;
+    }
+    .hint{
+      margin-top:18px;
+      padding:12px 14px;
+      border:1px dashed var(--line);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size:.92rem;
+      background:#f9f3eb;
+    }
+    .toolbar{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      padding:14px 18px;
+      border-top:2px solid var(--header);
+      background:#f1e7dc;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .toolbar button{
+      border:1px solid var(--header);
+      background:#fff;
+      padding:8px 12px;
+      cursor:pointer;
+      font-size:.92rem;
+    }
+    .toolbar button:hover{background:#f7f2ec}
+    
+    .scenic-image{
+      width:100%;
+      max-height:320px;
+      object-fit:cover;
+      border:1px solid var(--line);
+      display:block;
+      margin:0 0 22px;
+      background:#fff;
+    }
+    .photo-caption{
+      margin:-10px 0 22px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size:.9rem;
+      color:#5a4b3f;
+    }
+
+    @media (max-width: 900px){
+      .content-wrap{grid-template-columns:1fr}
+      .side{border-right:none;border-bottom:2px solid var(--header)}
+      .tabs{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width: 600px){
+      .tabs{grid-template-columns:1fr}
+      .info-grid{grid-template-columns:1fr}
+      .main{padding:22px 18px 30px}
+    }
+  </style>
+</head>
+<body>
+  <div class="site">
+    <div class="top-title editable">Isabela &amp; Ronan 2027</div>
+
+    <div class="tabs">
+      <div class="tab" data-tab="getting-there">Getting There</div>
+      <div class="tab" data-tab="ouro-preto">Ouro Preto</div>
+      <div class="tab" data-tab="belo-horizonte">Belo Horizonte</div>
+      <div class="tab" data-tab="rio">Rio</div>
+      <div class="tab active" data-tab="tips">Tips and Info</div>
+    </div>
+
+    <div class="content-wrap">
+      <aside class="side">
+        <h2>Welcome</h2>
+        <p>Welcome to our wedding info site. We are putting all necessary info, tips and advice here so it's easier for people to take a look and plan.</p>
+        <p>We're really looking forward to celebrating with you all and enjoying a Brazil trip together.</p>
+        <p>If you need to ask or check anything you can reach us on:<br>
+    <strong>+971 50 737 0627</strong></p>
+        <div class="hint">
+          Use the tabs above to explore travel info, places to stay, and things to do.
+        </div>
+      </aside>
+
+      <main class="main">
+        <section class="panel" id="getting-there">
+          <h1 class="editable">Getting There</h1>
+          <img class="scenic-image" src="./Brazil 2027 Updated 2_files/full_img_5682_1614470783.jpg" alt="Chao De Minas">
+          <div class="photo-caption">Chão de Minas</div>
+          <div class="hero-box richtext editable"><div>Hello, friends and family! We are very happy and excited that you are coming to Brazil to celebrate
+our wedding with us. This website is here to give you a few tips about the country and cities so that you are well prepared and
+can enjoy it the best way possible!</div><div><br></div>
+            Below is a breakdown of the airports and travel options for reaching Brazil and the wedding venue, where to stay and transport.<div><br></div><div>We are planning to be in Ouro Preto a few days before and after the wedding, then we plan to spend some time in Rio. You're welcome to follow the same plan (That's why we made all the info available here), if you decide to travel to any other places to see other parts of Brazil or South America we can offer suggestions as best we can.</div></div>
+          <div class="info-grid">
+            <div class="card">
+              <h3 class="editable">From Abroad</h3>
+              <div class="richtext editable"><b>Rio De Janeiro airport - GIG&nbsp;</b><div><b>Sao Paulo airport - GRU</b></div><div><b>Belo Horizonte airport - CNF</b></div><div><br></div><div>These are the 3 most viable airports to fly in and out of.</div><div>Belo Horizonte (CNF) is closest to the wedding venue but may not have direct flights from everyone's origin. We can help with transfers from CNF to venue</div><div><br></div><div>Rio (GIG) is the next closest and has frequent flights from most places. Travel time from Rio to the wedding venue is approx. 5/6 hours to the venue by road, or a short flight to CNF and then 1/2 hours by road.</div><div><br></div><div>Sao Paulo (GRU) is the largest international airport with the most flights, from here it's recommended to take the flight to CNF</div></div>
+            </div>
+            <div class="card">
+              <h3 class="editable">To the Wedding Venue</h3>
+              <div class="richtext editable">Location: Chao De Minas, Ouro Preto<br>Date: 05/06/2027<br>Time: 15:30<br><div><span style="font-size: 1rem;">https://maps.app.goo.gl/p1FFJy5Xi1NhFHz4A</span></div><div><br></div><div>There are 2 hotels next to the venue from the same chain, Hotel Bandeirantes.&nbsp;</div><div><br></div><div>There is also a new hotel a little further away, Vila Gale Ouro Preto.</div><div><br></div><div>We recommend these two options for the wedding weekend.</div><div style="color: rgb(0, 0, 0); font-family: Roboto, &quot;Noto Naskh Arabic UI&quot;, &quot;Noto Sans Devanagari UI&quot;, Arial, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);"><h1 class="DUwDvf lfPIob" style="background: transparent; border: 0px; border-radius: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: 1.375rem; line-height: 1.75rem; font-family: &quot;Google Sans&quot;, Roboto, Arial, sans-serif; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-language-override: inherit; list-style: none; margin-bottom: 0px; outline: 0px; overflow: visible; padding: 0px; vertical-align: baseline; letter-spacing: 0rem; color: rgb(31, 31, 31);"><br></h1><div><br></div></div><div class="LBgpqf" style="color: rgb(94, 94, 94); font-family: Roboto, &quot;Noto Naskh Arabic UI&quot;, &quot;Noto Sans Devanagari UI&quot;, Arial, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);"><div class="skqShb "></div></div><div class="LBgpqf" style="color: rgb(94, 94, 94); font-family: Roboto, &quot;Noto Naskh Arabic UI&quot;, &quot;Noto Sans Devanagari UI&quot;, Arial, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);"><div class="skqShb "></div></div></div>
+            </div>
+          </div>
+          <div class="section">
+            <h2 class="editable">Extra Notes</h2>
+            <div class="richtext editable">
+              Add notes about private drivers, arrival times, luggage, or useful route tips.
+            </div>
+          </div>
+        </section>
+
+        <section class="panel" id="ouro-preto">
+          <h1 class="editable">Ouro Preto</h1>
+          <img class="scenic-image" src="./Brazil 2027 Updated 2_files/ouro_preto.jpg" alt="Scenic view of Ouro Preto">
+          <div class="hero-box richtext editable"><p data-start="41" data-end="309">Ouro Preto is one of those places that feels like stepping back in time. Tucked into the hills of Minas Gerais, it’s full of winding cobblestone streets, colourful colonial houses, and some of the most beautiful baroque churches in Brazil.</p>
+<p data-start="311" data-end="586" data-is-last-node="" data-is-only-node="">It used to be a major gold mining town, so there’s loads of history around every corner, but it still has a relaxed, lively vibe thanks to its student population and local culture. Think great food, scenic viewpoints, and a slightly chaotic charm that makes it really special.</p><p data-start="311" data-end="586" data-is-last-node="" data-is-only-node="">It's a beautiful city to explore by foot, but bring comfortable shoes.</p></div>
+          <div class="section">
+            <h2 class="editable">Where to Stay</h2>
+            <div class="richtext editable"><ul data-start="85" data-end="373"><li data-start="85" data-end="373"><strong data-start="87" data-end="127">Centro Histórico (best overall area)</strong> – Right in the heart of everything, walkable but steep streets
+<ul data-start="195" data-end="373">
+<li data-start="195" data-end="236">
+<span class="" data-state="closed">Pousada Solar da Ópera</span>
+</li>
+<li data-start="239" data-end="373">
+<span class="" data-state="closed">Pousada Clássica</span><br data-start="278" data-end="281">
+<em data-start="283" data-end="333">(Top choice — you’re steps from all main sights)</em> <span class="" data-state="closed"></span>
+</li>
+</ul>
+</li>
+</ul><hr data-start="375" data-end="378"><ul data-start="380" data-end="662">
+<li data-start="380" data-end="662">
+<strong data-start="382" data-end="443">Rosário / Central outskirts (charming &amp; slightly quieter)</strong> – Still walkable, but a bit less hectic
+<ul data-start="488" data-end="662">
+<li data-start="488" data-end="529">
+<span class="" data-state="closed">Hotel Solar do Rosário</span>
+</li>
+<li data-start="532" data-end="662">
+<span class="" data-state="closed">Hotel Solar de Maria</span><br data-start="571" data-end="574">
+<em data-start="576" data-end="622">(Great balance between location and comfort)</em> <span class="" data-state="closed"></span>
+</li>
+</ul>
+</li>
+</ul><hr data-start="664" data-end="667"><ul data-start="669" data-end="943">
+<li data-start="669" data-end="943">
+<strong data-start="671" data-end="719">Near Historic Entrance (good access + views)</strong> – Easy access by car, less hassle with hills
+<ul data-start="769" data-end="943">
+<li data-start="769" data-end="810">
+<span class="" data-state="closed">Hotel Pousada do Arcanjo</span>
+</li>
+<li data-start="813" data-end="943">
+<span class="" data-state="closed">Grande Hotel de Ouro Preto</span><br data-start="852" data-end="855">
+<em data-start="857" data-end="903">(Good if you want convenience + iconic stay)</em> <span class="" data-state="closed"></span>
+</li>
+</ul>
+</li>
+</ul><hr data-start="945" data-end="948"><p>
+
+
+
+
+
+</p><ul data-start="950" data-end="1227">
+<li data-start="950" data-end="1227">
+<strong data-start="952" data-end="1004">São Cristóvão / outskirts (best value &amp; relaxed)</strong> – Cheaper, quieter, short drive into centre
+<ul data-start="1053" data-end="1227">
+<li data-start="1053" data-end="1094">
+<span class="" data-state="closed">Hotel Recanto do Ouro</span>
+</li>
+<li data-start="1097" data-end="1227">
+<span class="" data-state="closed">Hotel Solar das Lajes</span><br data-start="1138" data-end="1141">
+<em data-start="1143" data-end="1185">(Best value for money, but not walkable)</em></li></ul></li></ul></div>
+          </div>
+          <div class="section">
+            <h2 class="editable">Things to Do</h2>
+            <div class="richtext editable"><ul><li><p>Wander the historic centre – Explore cobblestone streets, colourful houses, and hidden viewpoints.</p></li><li><p>Visit Igreja de São Francisco de Assis – Iconic baroque church with incredible detail and artwork.</p></li><li><p>Tour Mina do Chico Rei – Go underground and experience the city’s gold mining history.</p></li><li><p>Try Minas cuisine – Don’t miss Pão de queijo and Feijão tropeiro.</p></li><li><p>Watch sunset at Praça Tiradentes – Best views over the city’s rooftops and hills.</p></li></ul></div>
+          </div>
+          
+        </section>
+
+        <section class="panel" id="belo-horizonte">
+          <h1 class="editable">Belo Horizonte</h1>
+          <img class="scenic-image" src="./Brazil 2027 Updated 2_files/belo_horizonte.jpg" alt="Scenic view of Belo Horizonte">
+          <div class="hero-box richtext editable"><p data-start="41" data-end="281">Belo Horizonte is a laid-back but lively city that mixes modern urban life with strong local culture. It’s known for its amazing food scene (seriously, some of the best in Brazil), relaxed vibe, and friendly people.</p>
+<p data-start="283" data-end="534" data-is-last-node="" data-is-only-node="">You’ve got leafy squares, cool architecture around Pampulha, and loads of bars and restaurants to hop between. It’s not as touristy as other big Brazilian cities, which actually makes it feel more authentic—and a great base for exploring Minas Gerais.</p></div>
+          <div class="section">
+            <h2 class="editable">Where to Stay</h2>
+            <div class="richtext editable"><ul data-start="160" data-end="432"><li data-start="160" data-end="432"><strong data-start="162" data-end="193">Savassi (best overall area)</strong> – Lively, central, full of bars &amp; restaurants
+<ul data-start="244" data-end="432">
+<li data-start="244" data-end="285">
+<span class="" data-state="closed">Holiday Inn Belo Horizonte Savassi</span>
+</li>
+<li data-start="288" data-end="432">
+<span class="" data-state="closed">Novotel BH Savassi</span><br data-start="327" data-end="330">
+<em data-start="332" data-end="392">(Top choice for tourists and nightlife, very well located)</em> <span class="" data-state="closed"></span>
+</li>
+</ul>
+</li>
+</ul>
+<hr data-start="434" data-end="437">
+<ul data-start="439" data-end="716">
+<li data-start="439" data-end="716">
+<strong data-start="441" data-end="477">Lourdes (more upscale &amp; relaxed)</strong> – Slightly quieter but still central
+<ul data-start="535" data-end="716">
+<li data-start="535" data-end="576">
+<span class="" data-state="closed">Hotel Fasano Belo Horizonte</span>
+</li>
+<li data-start="579" data-end="716">
+<span class="" data-state="closed">Mercure Belo Horizonte Lourdes</span><br data-start="618" data-end="621">
+<em data-start="623" data-end="676">(Known as one of the best areas to stay)</em> <span class="" data-state="closed"></span>
+</li>
+</ul>
+</li>
+</ul>
+<hr data-start="718" data-end="721">
+<ul data-start="723" data-end="987">
+<li data-start="723" data-end="987">
+<strong data-start="725" data-end="761">Pampulha (scenic &amp; more chilled)</strong> – Near the lake and architecture, less central
+<ul data-start="813" data-end="987">
+<li data-start="813" data-end="854">
+<span class="" data-state="closed">Allia Gran Hotel Pampulha Suítes</span>
+</li>
+<li data-start="857" data-end="987">
+<span class="" data-state="closed">Nobile Inn Pampulha</span><br data-start="896" data-end="899">
+<em data-start="901" data-end="947">(Great if you want views and a quieter stay)</em></li></ul></li></ul></div>
+          </div>
+          <div class="section">
+            <h2 class="editable">Things to Do</h2>
+            <div class="richtext editable"><ul><li><p>Explore Mercado Central de Belo Horizonte – Try local cheeses, meats, and soak up the atmosphere.</p></li><li><p>Visit Pampulha Modern Ensemble – Iconic lakeside architecture by Oscar Niemeyer.</p></li><li><p>Bar-hop in Savassi – Best area for nightlife, bars, and restaurants.</p></li><li><p>Relax at Praça da Liberdade – Beautiful square with gardens and museums.</p></li><li><p>Check out Mercado Novo &amp; botecos – Trendy food, drinks, and a more local, modern vibe.</p></li></ul></div>
+          </div>
+        </section>
+
+        <section class="panel" id="rio">
+          <h1 class="editable">Rio de Janeiro</h1>
+          <img class="scenic-image" src="./Brazil 2027 Updated 2_files/rio.jpg" alt="Scenic view of Rio de Janeiro">
+          <div class="hero-box richtext editable"><p data-start="41" data-end="249">Rio really needs no introduction. It’s one of the most iconic cities in the world, where dramatic mountains meet golden beaches and everything feels a bit larger than life.</p>
+<p data-start="251" data-end="485" data-is-last-node="" data-is-only-node="">From the energy of Copacabana and Ipanema to the views from Christ the Redeemer and Sugarloaf Mountain, Rio is all about atmosphere. It’s vibrant, scenic, and full of personality. The perfect place to enjoy sun, sand, sea and samba.&nbsp;</p></div>
+          <div class="section">
+            <h2 class="editable">Where to Stay</h2>
+            <div class="richtext editable"><ul data-start="137" data-end="334"><li data-start="137" data-end="334"><strong data-start="139" data-end="170">Ipanema (best overall area)</strong> – Safe, stylish, great beach + restaurants
+<ul data-start="218" data-end="334">
+<li data-start="218" data-end="249">
+Hotel Fasano Rio de Janeiro
+</li>
+<li data-start="252" data-end="334">
+Sol Ipanema Hotel<br data-start="271" data-end="274">
+<em data-start="276" data-end="332">(Top choice — best mix of beach, food, and atmosphere)</em>
+</li>
+</ul>
+</li>
+</ul>
+<hr data-start="336" data-end="339">
+<ul data-start="341" data-end="559">
+<li data-start="341" data-end="559">
+<strong data-start="343" data-end="380">Copacabana (classic &amp; convenient)</strong> – Iconic beach, loads of hotels, slightly more touristy
+<ul data-start="441" data-end="559">
+<li data-start="441" data-end="470">
+Belmond Copacabana Palace
+</li>
+<li data-start="473" data-end="559">
+Windsor California Copacabana<br data-start="504" data-end="507">
+<em data-start="509" data-end="557">(Great location and easy access to everything)</em>
+</li>
+</ul>
+</li>
+</ul>
+<hr data-start="561" data-end="564">
+<ul data-start="566" data-end="747">
+<li data-start="566" data-end="747">
+<strong data-start="568" data-end="598">Leblon (upscale &amp; quieter)</strong> – More relaxed, safer feel, high-end vibe
+<ul data-start="645" data-end="747">
+<li data-start="645" data-end="662">
+Janeiro Hotel
+</li>
+<li data-start="665" data-end="747">
+Sheraton Grand Rio Hotel &amp; Resort<br data-start="700" data-end="703">
+<em data-start="705" data-end="745">(Best for a calmer, more premium stay)</em>
+</li>
+</ul>
+</li>
+</ul>
+<hr data-start="749" data-end="752">
+<ul data-start="754" data-end="950">
+<li data-start="754" data-end="950">
+<strong data-start="756" data-end="792">Santa Teresa (boutique &amp; scenic)</strong> – Hillside, artsy, amazing views
+</li><ul data-start="830" data-end="950">
+<li data-start="830" data-end="866">
+Santa Teresa Hotel RJ – MGallery
+</li>
+<li data-start="869" data-end="950">
+Vila Santa Teresa<br data-start="888" data-end="891">
+<em data-start="893" data-end="948">(Perfect for something unique and less beach-focused)</em></li></ul></ul><div><i><br></i></div><div><i>Airbnb can also be a great option in Rio, especially in central areas such as Urca, Copacabana, Flamengo</i></div></div>
+          </div>
+          <div class="section">
+            <h2 class="editable">Things to Do</h2>
+            <div class="richtext editable"><span style="font-size: 1rem;">The main and most famous tourist attractions are on the Zona Sul and Centro. So this is where you should stay (because moving in Rio takes time, so better stay there).</span><br><ul data-start="85" data-end="1112"><li data-start="85" data-end="177">Visit <span class="hover:entity-accent entity-underline inline cursor-pointer align-baseline">Christ the Redeemer</span> – Iconic statue with unreal panoramic views.
+</li>
+<li data-start="178" data-end="280">
+Ride up <span class="hover:entity-accent entity-underline inline cursor-pointer align-baseline">Sugarloaf Mountain</span> – Cable car views over the whole city and coastline.
+</li>
+<li data-start="281" data-end="373">
+Relax at <span class="hover:entity-accent entity-underline inline cursor-pointer align-baseline">Ipanema Beach</span> – Best mix of scenery, vibe, and sunsets.
+</li>
+<li data-start="374" data-end="469">
+Walk along <span class="hover:entity-accent entity-underline inline cursor-pointer align-baseline">Copacabana Beach</span> – Famous promenade and buzzing atmosphere.
+</li>
+<li data-start="470" data-end="563">
+Explore <span class="hover:entity-accent entity-underline inline cursor-pointer align-baseline">Santa Teresa</span> – Artsy neighbourhood with charm and views.
+</li>
+<li data-start="564" data-end="654">
+Visit <span class="hover:entity-accent entity-underline inline cursor-pointer align-baseline">Escadaria Selarón</span> – Colourful tiled steps, great photo spot.
+</li>
+<li data-start="655" data-end="787">
+Hike <span class="hover:entity-accent entity-underline inline cursor-pointer align-baseline">Pedra da Gávea</span> or <span class="hover:entity-accent entity-underline inline cursor-pointer align-baseline">Dois Irmãos</span> – Incredible viewpoints if you’re up for it.</li>
+<li data-start="902" data-end="1006">
+Visit <span class="hover:entity-accent entity-underline inline cursor-pointer align-baseline">Parque Lage</span> – Jungle setting with a cool café and views of Christ.
+</li>
+<li data-start="1007" data-end="1112">Take a helicopter tour of Rio</li>
+</ul></div>
+          </div>
+        </section>
+
+        <section class="panel active" id="tips">
+          <h1 class="editable">Tips and Info</h1>
+          <div class="section">
+            <h2 class="editable">Practical Info</h2>
+            <div class="richtext editable"><b>
+              Currency</b> : Brazil uses Brazilian Real (BRL), card is accepted at most places. However some machines won't take foreign cards. It can be good to have some cash on hand, especially for markets, street vendors etc.<div><br></div><div><b>Entry Visas </b>: Most of you can enter visa free, a few countries since 2026 must apply for a E-Visa prior to arrival and some may require a physical visa issued, bear in mind visa requirements frequently change, please check the exact requirements and let us know if you need anything.</div><div><br></div><div><b>Power</b> :&nbsp;<span style="font-size: 1rem; color: rgb(10, 10, 10); font-family: &quot;Google Sans&quot;, Arial, sans-serif; background-color: rgb(255, 255, 255);">Brazil uses type N Sockets, so pack a travel adapter.</span></div><div><span style="font-size: 1rem; color: rgb(10, 10, 10); font-family: &quot;Google Sans&quot;, Arial, sans-serif; background-color: rgb(255, 255, 255);"><br></span></div><div><span style="font-size: 1rem; color: rgb(10, 10, 10); font-family: &quot;Google Sans&quot;, Arial, sans-serif; background-color: rgb(255, 255, 255);"><b>Phone </b>: eSims can be activated for days/weeks at low cost with Airalo app, to give you data.</span></div><div><span style="font-size: 1rem; color: rgb(10, 10, 10); font-family: &quot;Google Sans&quot;, Arial, sans-serif; background-color: rgb(255, 255, 255);"><br></span></div><div><span style="font-size: 1rem; color: rgb(10, 10, 10); font-family: &quot;Google Sans&quot;, Arial, sans-serif; background-color: rgb(255, 255, 255);"><b>Weather </b>: <b><i>Ouro Preto</i></b> -&nbsp;</span><span style="font-size: 1rem;">~22–23°C daytime / ~12–13°C night</span><span style="font-size: 1rem; color: rgb(10, 10, 10); font-family: &quot;Google Sans&quot;, Arial, sans-serif; background-color: rgb(255, 255, 255);"><br></span></div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<b><i>Belo Horizonte</i></b> -&nbsp;~24–26°C daytime / ~13–15°C night</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<b><i>Rio De Janeiro</i></b>&nbsp; -&nbsp;~25–28°C daytime / ~18–20°C night</div><div><br></div><div><b>Packing</b> : The weather will vary from Minas to Rio, Minas being slightly cooler (Still hot under the sun). Rio can feel very hot and humid, not too cool at night. Pack some light jackets for evening time, and then&nbsp;the usual, summer clothes, sunscreen, sunglasses, hats, lots of swimming suits! And stay hydrated :)</div><div><br></div><div><b>Food &amp; Drink</b> : Brazil has quite a heavy cuisine and eat a lot of meat (Churrasco/Brazilian BBQ is a must try). Brazil is huge and there are many different kinds of food within Brazil. Typical things that you should try: Feijoada (com farofa e couve),&nbsp;<span style="font-size: 1rem;">Pão de queijo,&nbsp;</span><span style="font-size: 1rem;">Coxinha,&nbsp;</span><span style="font-size: 1rem;">Pastel,&nbsp;</span><span style="font-size: 1rem;">Açaí,&nbsp;</span><span style="font-size: 1rem;">Empada/empadão/empadinha,&nbsp;</span><span style="font-size: 1rem;">Carne de sol,&nbsp;</span><span style="font-size: 1rem;">Churrasco,&nbsp;</span><span style="font-size: 1rem;">Acarajé,&nbsp;</span><span style="font-size: 1rem;">Tapioca,&nbsp;</span><span style="font-size: 1rem;">Brigadeiro,&nbsp;</span><span style="font-size: 1rem;">Moqueca,&nbsp;</span><span style="font-size: 1rem;">Baião de dois,&nbsp;</span><span style="font-size: 1rem;">Bobó de camarão,&nbsp;</span><span style="font-size: 1rem;">Churros,&nbsp;</span><span style="font-size: 1rem;">Bolinho de bacalhau,&nbsp;</span><span style="font-size: 1rem;">Aipim/macaxeira frito, Caipirinha, Original Beer, Cachaca.</span></div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</div><div><b>Language </b>: As most of you probably know, Portuguese is the main language spoken in Brazil, and while you’ll usually get by with English in larger cities, it’s not as widely spoken outside of them. A few basic Portuguese phrases will definitely go a long way and be loved by the locals for the effort. Duolingo can get you through a lot of them.</div><div><br></div><div><b>Safety </b>:&nbsp;Brazil is an amazing place, with amazing people and culture, but like any big destination (More applicable to Rio) there can be risks and areas to avoid, it's not a life or death situation, the main thing to be wary of is pickpocketing and it’s just about using a bit of common sense 😊&nbsp;<span style="font-size: 1rem;">It can be a good idea to keep your phone/wallet/keys in a bumbag or cross-body bag, s</span><span style="font-size: 1rem;">tick to busy areas, avoid flashy valuables, don't wander around deserted areas at night, avoid any trouble and you’ll have an incredible time. Don't let that work up any panic and spoil your fun!</span></div><div><br></div><div><b>Transport </b>: Best way around in most cities is Uber, it's inexpensive and there are plenty. There are buses, trams and subways. They can be handy but the easiest is Uber.</div><div>&nbsp; &nbsp; &nbsp;</div></div>
+          </div>
+          <div class="section">
+            <h2 class="editable">If you need us</h2>
+            <div class="richtext editable">
+              Email: thevieirasterry27@gmail.com
+            <div>Phone : +971 50 737 0627</div></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="toolbar">
+      
+    </div>
+  </div>
+
+  <script>
+    const tabs = document.querySelectorAll('.tab');
+    const panels = document.querySelectorAll('.panel');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const id = tab.dataset.tab;
+        tabs.forEach(t => t.classList.remove('active'));
+        panels.forEach(p => p.classList.remove('active'));
+        tab.classList.add('active');
+        document.getElementById(id).classList.add('active');
+      });
+    });
+window.onload = function() {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+
+  document.querySelector('[data-tab="getting-there"]').classList.add('active');
+  document.getElementById('getting-there').classList.add('active');
+};
+  </script>
+
+
+</body></html>
